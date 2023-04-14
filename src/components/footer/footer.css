@@ -1,0 +1,17 @@
+footer{
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    height: 39px;
+    width: 122px;
+    margin: 20px 100px;
+
+}
+footer p{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+}
