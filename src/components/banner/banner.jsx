@@ -1,14 +1,16 @@
-import Background from '../../Background.png';
+import React from 'react';
 import './banner.css';
-function Banner() {
+
+function Banner({ content, background }) {
+    const bannerStyle = {
+        backgroundImage: `url(${background})`,
+    };
+
     return (
-        <section className="banner">
-            <div className="banner_content">
-                <img src={Background} alt='paysage'/>
-                <h1>Chez vous, partout et ailleurs</h1>
-            </div>
-        </section>
-  );
+        <div className='banner' style={bannerStyle}>
+            <div className='banner_title'>{ content }</div>
+        </div>
+    );
 }
 
 export default Banner;

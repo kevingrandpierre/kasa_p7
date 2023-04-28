@@ -2,6 +2,8 @@ footer{
     background: black;
     display: flex;
     justify-content: center;
+    bottom: 0;
+    width: 100%;
 }
 footer img{
     height: 39px;

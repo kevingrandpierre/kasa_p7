@@ -1,0 +1,9 @@
+.sectionHome {
+    display: flex;
+    background-color: #F7F7F7;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
