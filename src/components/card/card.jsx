@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./card.css";
 import { Link } from "react-router-dom";
-import logements from "../../data/logements.json"; // Importer le fichier JSON
+import Logements from "../../data/logements.json";
 
 function Card() {
     const [housing, setHousing] = useState([]); // Définir un état initial vide pour les logements
 
     useEffect(() => {
-        setHousing(logements); // Utiliser le fichier JSON dans l'état housing
+        setHousing(Logements); // Utiliser le fichier JSON 
     }, []);
 
     return (

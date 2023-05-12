@@ -1,9 +1,9 @@
 import React from "react";
 import './home.css'
-import Header from '../../components/header/header.jsx'
-import Banner from '../../components/banner/banner.jsx'
+import Header from '../../layouts/header/header.jsx'
+import Banner from '../../layouts/banner/banner.jsx'
 import Background from '../../assets/images/Background.png'
-import Footer from "../../components/footer/footer";
+import Footer from "../../layouts/footer/footer";
 import Card from "../../components/card/card";
 
 

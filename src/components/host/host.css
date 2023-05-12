@@ -1,0 +1,11 @@
+.hostHousing{
+    width: auto;
+}
+
+.identity{
+    flex-direction: column;
+}
+.Avatar{
+    width: 64px;
+    border-radius: 50%;
+}

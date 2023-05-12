@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import './error.css'
-import Header from '../../components/header/header.jsx'
+import Header from '../../layouts/header/header.jsx'
 
 function Page404() {
     return (

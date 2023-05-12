@@ -2,11 +2,11 @@
     width: 95%;
     height: 223px;
     mix-blend-mode: darken;
-    background: #000000;
     border-radius: 25px;
     position: relative;
     margin: auto;
-    border: 1px solid red;
+    background-position: center;
+    background-size: 100%;
 }
 .banner_title {
      position: absolute;
