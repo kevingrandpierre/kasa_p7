@@ -25,25 +25,30 @@ function Housing() {
                 <section className='sectionHousing'>
                     <div className='housing'>
                         <Carousel pictures={Logement.pictures} />
-                        <div className='housing_location'>{Logement.location} </div>
+                        <div className="description_housing">
+                            <div className='housing_location'>{Logement.location}
+                                <div className='housing_title'>
+                                    {Logement.title}
+                                </div>
+                            </div>
 
-                        <div className='housing_rating'>
-                            <Rating rating={Logement.rating} />
+                            <div className='housing_host'>
+                                <Host host={Logement.host} /><br/>
+                                <Rating rating={Logement.rating} />
+                            </div>
                         </div>
-                        <div className='housing_host'>
-                            <Host host={Logement.host} />
-                        </div>
-
 
                         <div className='housing_content'>
-                            <div className='housing_title'>{Logement.title}</div>
+
                             <div className='housing_tags'>
                                 <Tags tags={Logement.tags} />
                             </div>
-                                <Collapse title='Equipements' content={Logement.equipments} />
+                            <div className='housing_collapse'>
                                 <Collapse title='Description' content={Logement.description} />
+                                <Collapse title='Equipements' content={Logement.equipments} />
                             </div>
                         </div>
+                    </div>
                 </section>
             </main>
             <Footer />

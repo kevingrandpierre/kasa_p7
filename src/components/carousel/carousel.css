@@ -17,7 +17,8 @@
 .picture {
     position: absolute;
     opacity: 0;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
+    transform: scale(0.9);
 }
 
 .hide {
@@ -27,15 +28,15 @@
 .picture.active {
     position: absolute;
     opacity: 1;
-    transition-duration: 1.5s;
+    transition-duration: 0.3s;
     transform: scale(1.1);
 }
 
 .back {
     position: relative;
     left: 650px;
-    height: 20px;
-    width: 12px;
+    height: 80px;
+    width: 50px;
     cursor: pointer;
     user-select: none;
 }
@@ -43,13 +44,15 @@
 .forward {
     position: relative;
     right: 650px;
-    height: 20px;
-    width: 12px;
+    height: 80px;
+    width: 50px;
     cursor: pointer;
     user-select: none;
 }
 
-/*
-.compteur{
-    display: none;
-}*/
+
+.compteur , .compteur2 {
+    margin: -2rem 50%;
+    color: white;
+    width: 3rem;
+}

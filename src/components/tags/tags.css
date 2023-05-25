@@ -1,19 +1,18 @@
-.tag-text {
-    background-color: orange;
+.tag {
+    background-color: #FF6060;
     list-style: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     text-align: center;
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 2px 29px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 14px;
     white-space: nowrap;
 }
 
-.tag-container {
+.tags {
     display: flex;
     flex-wrap: wrap;
 }

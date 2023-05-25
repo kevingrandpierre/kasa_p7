@@ -1,11 +1,18 @@
 .hostHousing{
-    width: auto;
+    display: flex;
+    padding-left: 4rem;
 }
 
-.identity{
+.identity p{
     flex-direction: column;
+    color: #FF6060;
+    font-size: 18px !important;
+    font-weight: 500;
+
 }
 .Avatar{
     width: 64px;
+    height: 64px;
     border-radius: 50%;
+    margin-left: 1rem;
 }

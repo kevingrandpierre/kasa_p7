@@ -10,6 +10,7 @@
 h1{
     font-size: 288px;
     font-weight: 700;
+    margin-top: 10rem;
 }
 p{
     font-size: 36px;
@@ -19,5 +20,5 @@ p{
     font-size: 18px;
     font-weight: 500;
     color: #FF6060;
-    padding: 10rem;
+    margin: 15rem;
 }

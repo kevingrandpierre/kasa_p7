@@ -1,22 +1,4 @@
-.banner {
-    width: 95%;
-    height: 223px;
-    mix-blend-mode: darken;
-    border-radius: 25px;
-    position: relative;
-    margin: auto;
-    background-position: center;
-    background-size: 100%;
+.bannerWrapper {
+background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
 }
-.banner_title {
-     position: absolute;
-     color: white;
-     font-size: 48px;
-     z-index: 1;
-     width: 100%;
-     text-align: center;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
- }
 

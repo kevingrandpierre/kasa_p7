@@ -20,11 +20,11 @@ function About() {
         <>
             <main>
                 <Header />
-                <Banner background={BackgroundAbout} />
+                <Banner className='bannerBackground_about' background={BackgroundAbout} />
                     <div className='sectionAbout'>
                         {about.map((data) => {
                             return (
-                                <div key = {data.id}>
+                                <div className='collapseAbout' key = {data.id}>
                                     <Collapse title={data.title} content={data.body}  />
                                 </div>
                             );

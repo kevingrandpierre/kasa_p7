@@ -6,6 +6,7 @@ import Housing from "./pages/housing/housing";
 import About from "./pages/about/about";
 import Page404 from "./pages/error/error";
 
+
 function App() {
     return (
         <BrowserRouter>

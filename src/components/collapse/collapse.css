@@ -1,8 +1,9 @@
 .collapse {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    background-color: #F7F7F7;
+    /*background-color: #F7F7F7;*/
     margin-bottom: 2rem;
+    width: 100%;
 }
 
 
@@ -15,7 +16,7 @@
     margin: 0 auto;
     border-radius: 10px;
     font-weight: 500;
-    font-size: clamp(13px, 2vw, 24px);
+    font-size: 18px;
     padding: 10px 15px;
     cursor: pointer;
 }
@@ -33,16 +34,23 @@
 }
 
 .collapseContent {
-    letter-spacing: 1px;
     visibility: visible;
     opacity: 1;
     height: auto;
-    margin-top: 27px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    font-size: clamp(12px, 2vw, 24px);
+    /*margin-top: 15px;*/
+    /*padding-left: 10px;
+    padding-bottom: 5px;*/
+    padding: 20px;
+    font-size: 18px !important;
+    font-weight: 400 !important;
     color: #FF6060;
+    background-color: #F7F7F7;
     transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.2s ease-in-out;
+}
+
+.collapseContent p{
+    font-size: 18px !important;
+    font-weight: 400 !important;
 }
 
 .collapseContentHidden {
@@ -51,19 +59,3 @@
     height: 0;
 }
 
-.aboutMainCollapse {
-    margin: 31px auto;
-    width: 85%;
-}
-
-.hebergementCollapse {
-    display: flex;
-    justify-content: space-between;
-    gap: 70px;
-    margin: 30px auto;
-    width: 85%;
-}
-
-.hebergementCollapseItem {
-    width: 50%;
-}

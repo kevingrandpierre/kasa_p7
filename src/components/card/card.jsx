@@ -16,8 +16,11 @@ function Card() {
                 const { id, title, cover } = item;
                 return (
                     <Link to={"housing/" + id} className="card" key={id}>
-                        <img src={cover} alt="Appartement" className="card_img"></img>
-                        <div className="card_title">{title}</div>
+                        <img src={cover} alt="Appartement" className="card_img"></img>\
+                        <div className="card_overlay">
+                            <div className="card_title">{title}</div>
+                        </div>
+
                     </Link>
                 );
             })}

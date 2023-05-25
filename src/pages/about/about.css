@@ -1,4 +1,10 @@
 .sectionAbout {
     text-align: center;
-    margin: 50px;
+    margin: 50px 130px;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+}
+
+.bannerBackground_about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
