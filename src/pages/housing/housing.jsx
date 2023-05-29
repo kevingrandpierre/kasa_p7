@@ -20,16 +20,22 @@ function Housing() {
     }
     return (
          <>
+
             <main>
                 <Header />
                 <section className='sectionHousing'>
                     <div className='housing'>
                         <Carousel pictures={Logement.pictures} />
                         <div className="description_housing">
+                            <div className='housing_desc'>
                             <div className='housing_location'>{Logement.location}
                                 <div className='housing_title'>
                                     {Logement.title}
                                 </div>
+                            </div>
+                            <div className='housing_tags'>
+                                <Tags tags={Logement.tags} />
+                            </div>
                             </div>
 
                             <div className='housing_host'>
@@ -39,10 +45,6 @@ function Housing() {
                         </div>
 
                         <div className='housing_content'>
-
-                            <div className='housing_tags'>
-                                <Tags tags={Logement.tags} />
-                            </div>
                             <div className='housing_collapse'>
                                 <Collapse title='Description' content={Logement.description} />
                                 <Collapse title='Equipements' content={Logement.equipments} />
@@ -52,6 +54,8 @@ function Housing() {
                 </section>
             </main>
             <Footer />
+
+
         </>
     );
 }

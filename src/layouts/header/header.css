@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    width: 100rem;
+    height: 68px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .nav_logo img{
@@ -25,4 +27,29 @@
     font-size: 24px;
     font-weight: 500;
     padding: 0 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .nav_logo img{
+        height: 47px;
+        width: 142px;
+    }
+
+    .nav_links {
+        align-items: center;
+        height: 47px;
+    }
+
+    .nav_links a {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .navigation {
+        padding: 10px;
+        height: 47px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        justify-content: space-around;
+    }
 }

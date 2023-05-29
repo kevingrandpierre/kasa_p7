@@ -8,3 +8,14 @@
 .bannerBackground_about {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
+
+@media screen and (max-width: 650px) {
+    .sectionAbout {
+      margin: 50px 10px;
+      width: 95%;
+    }
+
+    .collapseAbout {
+        height: 50%;
+    }
+}

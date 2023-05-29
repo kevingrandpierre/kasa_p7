@@ -16,3 +16,20 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 650px) {
+    .tag {
+        font-size: 12px;
+        padding: 2px 10px;
+    }
+
+    .tags {
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .tags .tag {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}

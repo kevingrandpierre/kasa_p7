@@ -7,3 +7,14 @@
     margin: 45px;
     border-radius: 25px;
 }
+
+footer {
+    position: inherit !important;
+}
+
+@media screen and (max-width: 650px) {
+    .sectionHome {
+        padding: 20px 15px 0 15px;
+        margin: 30px;
+    }
+}
