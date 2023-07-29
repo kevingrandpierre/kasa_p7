@@ -44,8 +44,8 @@
 @media screen and (max-width: 650px) {
     .banner {
         height: 111px;
-        width: 81%;
-        margin-top: 0;
+        width: 96%;
+        margin-top: 20px;
         margin-bottom: 0;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/Background.png');
     }

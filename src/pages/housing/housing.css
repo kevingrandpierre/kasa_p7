@@ -22,7 +22,7 @@
 
 .housing_content {
     margin: 2rem;
-    padding-bottom: 12rem;
+    padding-bottom: 10.75rem;
 }
 
 .housing_location {
@@ -67,6 +67,7 @@
 
     .housing_content {
         margin: 1rem;
+        padding-bottom: 0;
     }
 
     .housing_host {
