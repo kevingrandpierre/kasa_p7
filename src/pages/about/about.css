@@ -14,9 +14,10 @@
     .sectionAbout {
       margin: 50px 10px;
       width: 95%;
+      padding-bottom: 5rem;
     }
 
     .collapseAbout {
-        height: 50%;
+        height: auto;
     }
 }

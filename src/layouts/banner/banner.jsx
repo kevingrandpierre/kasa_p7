@@ -11,8 +11,8 @@ function Banner() {
     useEffect(() => {
         if(location.pathname === '/about'){
             setAboutPage(true)
-        };
-    }, [])
+        }
+    }, [location.pathname])
 
     return (
         <section className={aboutPage ? 'bannerApropos' : 'banner'}>

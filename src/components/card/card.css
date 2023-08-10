@@ -32,5 +32,6 @@
     .card {
         height: 255px;
         width: 355px;
+        margin-bottom: 20px;
     }
 }

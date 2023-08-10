@@ -1,37 +1,45 @@
-footer{
+footer {
     background: black;
     display: flex;
     justify-content: center;
-    bottom: 0;
+    align-items: center;
     width: 100%;
-    position: absolute;
+    position: relative;
+    padding: 20px 0;
+    /* Place le footer en bas de la page */
+    bottom: 0;
 }
 
-footer img{
+footer img {
     height: 39px;
     width: 122px;
     margin: 20px 100px;
 }
 
-footer p{
+footer p {
     color: white;
     font-size: 24px;
     font-weight: 500;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 @media screen and (max-width: 650px) {
-    footer img{
+    .footer_contain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer img {
         height: 24px;
         width: 74px;
         margin: 10px 50px;
     }
 
-    footer p{
+    footer p {
         font-size: 12px;
+        width: 12rem;
     }
 
-    footer {
-        padding: 1rem 0;
-    }
 }
