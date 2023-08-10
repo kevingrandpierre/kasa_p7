@@ -8,32 +8,29 @@ import Collapse from "../../components/collapse/collapse";
 import AboutData from "../../data/About.json";
 
 function About() {
-    const [ about , setAbout ] = useState([])
+    const [about, setAbout] = useState([]);
 
     useEffect(() => {
-        setAbout(AboutData)
-    }
-    ,[]);
-
+        setAbout(AboutData);
+    }, []);
 
     return (
         <>
             <main>
                 <Header />
                 <Banner className='bannerBackground_about' background={BackgroundAbout} />
-                    <div className='sectionAbout'>
-                        {about.map((data) => {
-                            return (
-                                <div className='collapseAbout' key = {data.id}>
-                                    <Collapse title={data.title} content={data.body}  />
-                                </div>
-                            );
-                        })}
-                    </div>
+                <div className='sectionAbout'>
+                    {about.map((data) => (
+                        <div className='collapseAbout' key={data.id}>
+                            <Collapse key={data.id} title={data.title} content={data.body} />
+                        </div>
+                    ))}
+                </div>
             </main>
             <Footer />
         </>
     );
 }
+
 
 export default About;

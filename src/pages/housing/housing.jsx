@@ -14,7 +14,6 @@ import Host from "../../components/host/host";
 function Housing() {
     const id = useParams();
     const Logement = Logements.find(logement => logement.id === id.id);
-    console.log(Logement)
     if ( Logement === undefined ) {
         return <Error />
     }
