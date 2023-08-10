@@ -88,7 +88,7 @@
         position: absolute;
         opacity: 1;
         transition-duration: 1.5s;
-        transform: scale(1.15);
+        transform: scale(1.1);
     }
 
     .back {
