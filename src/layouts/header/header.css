@@ -29,6 +29,15 @@
     padding: 0 20px;
 }
 
+.nav_links a:hover {
+    text-decoration: underline; /* Soulignement au survol du lien */
+}
+
+.nav_links a.active {
+    text-decoration: none; /* Enlève le soulignement du lien actif */
+}
+
+
 @media screen and (max-width: 650px) {
     .nav_logo img{
         height: 47px;

@@ -4,9 +4,8 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
+    position: fixed;
     padding: 20px 0;
-    /* Place le footer en bas de la page */
     bottom: 0;
 }
 

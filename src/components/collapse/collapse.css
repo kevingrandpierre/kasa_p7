@@ -1,11 +1,9 @@
 .collapse {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    /*background-color: #F7F7F7;*/
     margin-bottom: 2rem;
     width: 100%;
 }
-
 
 .collapseTitle {
     display: flex;
@@ -37,15 +35,13 @@
     visibility: visible;
     opacity: 1;
     height: auto;
-    /*margin-top: 15px;*/
-    /*padding-left: 10px;
-    padding-bottom: 5px;*/
-    padding: 20px;
-    font-size: 18px !important;
-    font-weight: 400 !important;
+    font-weight: 400;
+    font-size: 24px;
     color: #FF6060;
     background-color: #F7F7F7;
     transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.2s ease-in-out;
+    padding: 25px;
+    line-height: 150%;
 }
 
 .collapseContent p{
