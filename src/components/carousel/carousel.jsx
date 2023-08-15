@@ -25,7 +25,7 @@ function Carousel({ pictures }) {
                         return (
                             <div
                                 className={index === current ? 'picture active' : 'picture'}
-                                key={index}
+                                key={picture}
                             >
                                 <img
                                     className="carousel_img"
