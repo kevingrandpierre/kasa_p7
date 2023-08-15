@@ -19,14 +19,15 @@
 
 @media screen and (max-width: 650px) {
     .tag {
-        font-size: 12px;
-        padding: 4px 20px;
+        font-size: 10px;
+        padding: 4px 10px;
         border-radius: 5px;
     }
 
     .tags {
         justify-content: flex-start;
         margin-bottom: 20px;
+        flex-wrap: nowrap;
     }
 
     .tags .tag {

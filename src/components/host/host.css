@@ -1,6 +1,6 @@
 .hostHousing{
     display: flex;
-    padding-left: 4rem;
+    padding-left: 6rem;
 }
 
 .identity p{
@@ -15,4 +15,11 @@
     height: 64px;
     border-radius: 50%;
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+    .hostHousing {
+        display: flex;
+        padding-left: 7rem;
+    }
 }
