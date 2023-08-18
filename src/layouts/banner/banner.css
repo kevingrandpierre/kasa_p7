@@ -1,27 +1,22 @@
-.banner {
+.banner, .bannerApropos {
     position: relative;
     display: flex;
     border-radius: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/Background.png');
     background-position: center;
     background-size: cover;
-    height: 223px;
-    padding: 20px;
     width: 95%;
     margin: 43px auto;
-    mix-blend-mode: darken;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/Background.png');
+    height: 223px;
+    padding: 20px;
 }
 
 .bannerApropos {
-    position: relative;
-    display: flex;
-    border-radius: 25px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/BackgroundAbout.png');
-    background-position: center;
-    background-size: cover;
     height: 223px;
-    width: 95%;
-    margin: 43px auto;
 }
 
 .banner p {
@@ -35,6 +30,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 .banner br {
@@ -42,25 +38,26 @@
 }
 
 @media screen and (max-width: 650px) {
+    .banner, .bannerApropos {
+        width: 96%;
+    }
+
     .banner {
         height: 111px;
-        width: 96%;
         margin-top: 20px;
-        margin-bottom: 0;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/Background.png');
+    }
+
+    .bannerApropos {
+        height: 10rem;
     }
 
     .banner p {
         font-size: 24px;
-    }
-    .banner br {
-        display: initial;
+        white-space: normal;
     }
 
-    .bannerApropos {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/BackgroundAbout.png');
-        width: 94%;
-        height: 10rem;
-        margin-top: 0;
+    .banner br {
+        display: initial;
     }
 }

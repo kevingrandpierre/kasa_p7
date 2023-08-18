@@ -1,16 +1,21 @@
-.hostHousing{
+.hostHousing {
     display: flex;
+    align-items: center;
     padding-left: 6rem;
 }
 
-.identity p{
-    flex-direction: column;
+.identity p {
     color: #FF6060;
-    font-size: 18px !important;
+    font-size: 18px;
     font-weight: 500;
-
+    margin: 0;
 }
-.Avatar{
+
+.hostName {
+    margin-bottom: 0.5rem;
+}
+
+.Avatar {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -19,7 +24,6 @@
 
 @media screen and (max-width: 650px) {
     .hostHousing {
-        display: flex;
-        padding-left: 7rem;
+        padding-left: 7em;
     }
 }

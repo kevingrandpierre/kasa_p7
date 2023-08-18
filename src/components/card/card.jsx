@@ -4,26 +4,33 @@ import { Link } from "react-router-dom";
 import Logements from "../../data/logements.json";
 
 function Card() {
-    const [housing, setHousing] = useState([]); // Définir un état initial vide pour les logements
+    const [housing, setHousing] = useState([]);
 
     useEffect(() => {
-        setHousing(Logements); // Utiliser le fichier JSON 
+        try {
+            setHousing(Logements);
+        } catch (error) {
+            console.error("Error loading housing data:", error);
+        }
     }, []);
 
     return (
         <>
-            {housing.map((item) => {
-                const { id, title, cover } = item;
-                return (
-                    <Link to={"housing/" + id} className="card" key={id}>
-                        <img src={cover} alt="Appartement" className="card_img"></img>\
-                        <div className="card_overlay">
-                            <div className="card_title">{title}</div>
-                        </div>
-
-                    </Link>
-                );
-            })}
+            {housing.length === 0 ? (
+                <p>Il n'y a pas de logements à afficher pour le moment</p>
+            ) : (
+                housing.map((item) => {
+                    const { id, title, cover } = item;
+                    return (
+                        <Link to={"housing/" + id} className="card" key={id}>
+                            <img src={cover} alt="Apartment" className="card_img" />
+                            <div className="card_overlay">
+                                <div className="card_title">{title}</div>
+                            </div>
+                        </Link>
+                    );
+                })
+            )}
         </>
     );
 }

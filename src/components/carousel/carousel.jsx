@@ -25,7 +25,7 @@ function Carousel({ pictures }) {
                         return (
                             <div
                                 className={index === current ? 'picture active' : 'picture'}
-                                key={picture}
+                                key={picture.id}
                             >
                                 <img
                                     className="carousel_img"
@@ -34,7 +34,7 @@ function Carousel({ pictures }) {
                                     alt="carou_image"
                                 />
                                 <div className={index === current ? 'compteur' : 'compteur2'}>
-                                    {current + 1}/{pictures.length}
+                                    {current + 1}/{length}
                                 </div>
                             </div>
                         )

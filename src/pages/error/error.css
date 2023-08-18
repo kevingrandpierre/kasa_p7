@@ -11,7 +11,8 @@
 h1{
     font-size: 288px;
     font-weight: 700;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 }
 .page_404 p{
     font-size: 36px;
@@ -25,6 +26,10 @@ h1{
 }
 
 @media screen and (max-width: 650px) {
+    .page_404 {
+        padding-bottom: 9.3rem;
+    }
+
    h1{
        font-size: 96px;
        margin-bottom: 0;
