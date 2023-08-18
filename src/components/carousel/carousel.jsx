@@ -25,11 +25,10 @@ function Carousel({ pictures }) {
                         return (
                             <div
                                 className={index === current ? 'picture active' : 'picture'}
-                                key={picture.id}
+                                key={picture}
                             >
                                 <img
                                     className="carousel_img"
-                                    key={index}
                                     src={picture}
                                     alt="carou_image"
                                 />
@@ -56,6 +55,7 @@ function Carousel({ pictures }) {
             </div>
         </div>
     )
+
 }
 
 export default Carousel;
