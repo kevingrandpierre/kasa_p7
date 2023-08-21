@@ -4,7 +4,7 @@
     border-radius: 25px;
     background-position: center;
     background-size: cover;
-    width: 95%;
+    width: 92%;
     margin: 43px auto;
 }
 
@@ -39,22 +39,27 @@
 
 @media screen and (max-width: 650px) {
     .banner, .bannerApropos {
-        width: 96%;
+        width: 95%;
+        border-radius: 10px;
+        margin: 10px auto;
     }
 
     .banner {
         height: 111px;
+        width: 355px;
         margin-top: 20px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/images/Background.png');
     }
 
     .bannerApropos {
-        height: 10rem;
+        height: 17rem;
     }
 
     .banner p {
-        font-size: 24px;
+        font-size: 20px;
         white-space: normal;
+        text-align: start;
+        padding-left: 20px;
     }
 
     .banner br {

@@ -1,7 +1,6 @@
 
-
 .description_housing {
-    margin: 40px;
+    margin: 0 65px;
     display: flex;
     justify-content: space-between;
     padding-top: 4rem;
@@ -24,8 +23,8 @@
 
 .housing_content {
     flex: 1;
-    margin: 2rem;
-    padding-bottom: 6rem;
+    margin: 2.5rem 4rem;
+    padding-bottom: 10rem;
 }
 
 .housing_location {
@@ -37,7 +36,7 @@
 .housing_desc {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 @media screen and (max-width: 650px) {
@@ -52,8 +51,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: inherit;
         margin-left: 20px;
+        padding-top: 2rem;
     }
 
     .housing_location {

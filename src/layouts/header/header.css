@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 0 20px 60px;
     height: 68px;
-    width: 100%;
+    width: 97%;
     margin-top: 20px;
 }
 
@@ -30,11 +30,11 @@
 }
 
 .nav_links a:hover {
-    text-decoration: underline; /* Soulignement au survol du lien */
+    text-decoration: underline;
 }
 
 .nav_links a.active {
-    text-decoration: none; /* Enlève le soulignement du lien actif */
+    text-decoration: none;
 }
 
 
@@ -47,8 +47,8 @@
     .nav_links {
         align-items: center;
         height: 47px;
+        text-transform: uppercase;
     }
-
     .nav_links a {
         font-size: 12px;
         padding: 0 10px;
@@ -56,9 +56,9 @@
 
     .navigation {
         height: 47px;
+        width: 350px;
         justify-content: space-between;
-        margin: 10px 14px;
-        width: 95%;
+        margin: 10px 21px;
         padding: 15px 0;
     }
 }

@@ -1,113 +1,74 @@
-.carousel{
-    height: 255px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 150px 0;
-}
-
-.carousel_img{
-    width: 1240px;
+.carousel {
     height: 415px;
-    border-radius: 10px;
-    object-fit: cover;
+    margin: 0 auto;
+    position: relative;
+    width: 92%;
+    padding-top: 2%;
 }
 
-.picture {
+.vector {
     position: absolute;
-    opacity: 0;
-    transition-duration: 3s;
-    transform: scale(1.3);
+    z-index: 1;
+    cursor: pointer;
+    width: 40px;
+    top: 60%;
 }
 
-.hide {
+.vector-left {
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+.vector-right {
+    margin-top: -20px;
+    margin-right: 25px;
+    right: 0;
+}
+
+.carousel-img {
+    border-radius: 15px;
+    height: 415px;
+    object-fit: cover;
+    display: none;
+    width: 100%;
+}
+
+.carousel-img.actif {
+    display: block;
+}
+
+.carousel-count {
     display: none;
 }
 
-.picture.active {
-    position: absolute;
-    opacity: 1;
-    transition-duration: 1.5s;
-    transform: scale(1.3);
-}
-
-.back {
-    position: relative;
-    left: 800px;
-    height: 80px;
-    width: 50px;
-    cursor: pointer;
-    user-select: none;
-}
-
-.forward {
-    position: relative;
-    right: 800px;
-    height: 80px;
-    width: 50px;
-    cursor: pointer;
-    user-select: none;
-}
-
-
-.compteur , .compteur2 {
-    margin: -2rem 50%;
-    color: white;
-    width: 3rem;
-}
-
-@media screen and (max-width: 650px) {
-    .carousel{
-        height: 255px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 30px;
-    }
-
-    .carousel_img{
-        width: 315px;
-        height: 255px;
-        border-radius: 10px;
-        object-fit: cover;
-    }
-
-    .picture {
+@media screen and (min-width: 769px) {
+    .carousel-count {
+        display: block;
         position: absolute;
-        opacity: 0;
-        transition-duration: 3s;
-        transform: scale(1.15);
+        left: 50%;
+        top: 100%;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
     }
+}
 
-    .hide {
-        display: none;
+@media screen and (max-width: 767px) {
+    .carousel {
+        height: 260px;
+        margin: 0 auto;
+        bottom: -20px;
     }
-
-    .picture.active {
-        position: absolute;
-        opacity: 1;
-        transition-duration: 1.5s;
-        transform: scale(1.1);
+    .carousel-img {
+        height: 255px;
     }
-
-    .back {
-        position: relative;
-        left: 185px;
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
+    .vector {
+        width: 15px;
     }
-
-    .forward {
-        position: relative;
-        right: 185px;
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-        user-select: none;
+    .vector-right {
+        margin-right: 5px;
     }
-
-    .compteur , .compteur2 {
-        display: none;
+    .vector-left {
+        margin-left: 5px;
     }
 }

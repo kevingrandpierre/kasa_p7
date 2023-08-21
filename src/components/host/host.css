@@ -1,24 +1,23 @@
-.hostHousing {
+.hostHousing{
     display: flex;
-    align-items: center;
     padding-left: 6rem;
 }
 
-.identity p {
+.identity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.identity p{
+    flex-direction: column;
     color: #FF6060;
-    font-size: 18px;
+    font-size: 18px !important;
     font-weight: 500;
+    display: flex;
+    align-items: flex-end;
 }
-
-.hostLastname {
-    margin-left: 30px;
-}
-
-.hostName {
-    margin-bottom: 0.5rem;
-}
-
-.Avatar {
+.Avatar{
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -27,6 +26,18 @@
 
 @media screen and (max-width: 650px) {
     .hostHousing {
-        padding-left: 7em;
+        display: flex;
+        position: relative;
+        left: 70%;
+        padding-left: inherit;
+    }
+
+    .Avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .identity p {
+        font-size: 12px !important;
     }
 }

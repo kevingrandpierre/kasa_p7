@@ -31,18 +31,21 @@
     transform: rotate(180deg);
 }
 
+
 .collapseContent {
     visibility: visible;
     opacity: 1;
     height: auto;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     color: #FF6060;
     background-color: #F7F7F7;
     transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out, height 0.2s ease-in-out;
     padding: 25px;
     line-height: 110%;
+    text-align: left; /* Ajout de cette ligne pour aligner le texte à gauche */
 }
+
 
 .collapseContent p{
     font-size: 18px !important;

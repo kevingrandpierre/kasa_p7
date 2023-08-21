@@ -23,8 +23,8 @@ function Housing() {
             <main>
                 <Header />
                 <section className='sectionHousing'>
+                    <Carousel pictures={Logement.pictures} />
                     <div className='housing'>
-                        <Carousel pictures={Logement.pictures} />
                         <div className="description_housing">
                             <div className='housing_desc'>
                             <div className='housing_location'>{Logement.location}
