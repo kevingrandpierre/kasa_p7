@@ -37,6 +37,15 @@
     display: none;
 }
 
+@media screen and (max-width: 810px) {
+    .banner p {
+        font-size: 40px;
+        white-space: normal;
+        text-align: start;
+        padding-left: 20px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .banner, .bannerApropos {
         width: 95%;

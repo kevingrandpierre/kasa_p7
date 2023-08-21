@@ -9,7 +9,9 @@ function Header() {
         <header>
             <nav className="navigation">
                 <div className="nav_logo">
-                    <img src={Logo} alt="logo kasa" />
+                    <Link to="/">
+                        <img src={Logo} alt="logo kasa" />
+                    </Link>
                 </div>
                 <ul className="nav_links">
                     <li>
