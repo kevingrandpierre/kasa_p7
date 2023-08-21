@@ -31,7 +31,7 @@
 @media screen and (max-width: 650px) {
     .card {
         height: 255px;
-        width: 355px;
+        width: 100%;
         margin-bottom: 20px;
     }
 }
