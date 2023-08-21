@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/LOGO.png";
 import "./header.css";
 
