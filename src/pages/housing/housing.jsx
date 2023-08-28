@@ -1,8 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import './housing.css'
-import Header from '../../layouts/header/header.jsx'
-import Footer from "../../layouts/footer/footer";
+import './housing.css';
 import Logements from "../../data/logements.json";
 import Error from "../error/error";
 import Carousel from "../../components/carousel/carousel";
@@ -21,7 +19,6 @@ function Housing() {
          <>
 
             <main>
-                <Header />
                 <section className='sectionHousing'>
                     <Carousel pictures={Logement.pictures} />
                     <div className='housing'>
@@ -52,9 +49,7 @@ function Housing() {
                     </div>
                 </section>
             </main>
-            <Footer />
-
-
+             
         </>
     );
 }

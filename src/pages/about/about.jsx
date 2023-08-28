@@ -1,8 +1,6 @@
 import React , { useState, useEffect }from "react";
-import './about.css'
-import Header from '../../layouts/header/header.jsx'
-import Banner from '../../layouts/banner/banner.jsx'
-import Footer from "../../layouts/footer/footer";
+import './about.css';
+import Banner from '../../layouts/banner/banner.jsx';
 import BackgroundAbout from "../../assets/images/BackgroundAbout.png";
 import Collapse from "../../components/collapse/collapse";
 import AboutData from "../../data/About.json";
@@ -17,7 +15,7 @@ function About() {
     return (
         <>
             <main>
-                <Header />
+
                 <Banner className='bannerBackground_about' background={BackgroundAbout} />
                 <div className='sectionAbout'>
                     {about.map((data) => (
@@ -27,7 +25,7 @@ function About() {
                     ))}
                 </div>
             </main>
-            <Footer />
+
         </>
     );
 }

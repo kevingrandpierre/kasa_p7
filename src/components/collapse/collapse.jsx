@@ -12,7 +12,7 @@ function Collapse({title, content}) {
                 <h3 className='collapseTitle' onClick={() => setToggle(!toggle)} >
                     {title}
                     <img
-                        className={toggle ? 'arrow arrowUp' : 'arrow arrowDown'}
+                        className={`arrow ${toggle ? 'arrowUp' : 'arrowDown'}`}
                         src={Arrow}
                         alt="show content"
                     />
